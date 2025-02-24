@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "18.20.7",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "react-sharepoint-v-2",
+    "libraryId": "2ecf1f6f-563f-48c4-b128-ff0c98f11d6d",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "react-sharepoint-v-2",
+    "solutionShortDescription": "react-sharepoint-v-2 description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
