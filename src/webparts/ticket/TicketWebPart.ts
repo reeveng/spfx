@@ -127,7 +127,7 @@ export default class TicketWebPart extends BaseClientSideWebPart<ITicketWebPartP
                 }),
                 PropertyPaneSlider("maxItems", {
                   label: "Items per page",
-                  min: 5,
+                  min: 1,
                   max: 50,
                   value: 10,
                 }),
