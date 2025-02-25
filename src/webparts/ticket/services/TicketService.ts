@@ -40,7 +40,6 @@ export class TicketService {
         body,
         headers: {
           "Content-type": "application/json;odata=verbose",
-          Accept: "application/json;odata=nometadata",
         },
       }
     );
@@ -49,22 +48,19 @@ export class TicketService {
   }
 
   public async updateTicket(ticket: ITicket): Promise<void> {
-    const body = JSON.stringify({
-      __metadata: { type: this.listItemEntityTypeName },
-      ...ticket,
-    });
-
-    await this.spHttpClient.post(
-      `${this.getListEndpoint()}/items(${ticket.Id})`,
-      SPHttpClient.configurations.v1,
-      {
-        body,
-        headers: {
-          "Content-type": "application/json;odata=verbose",
-          "X-HTTP-Method": "MERGE",
-          "IF-MATCH": "*",
-        },
-      }
-    );
+    //   const body = JSON.stringify({
+    //     __metadata: { type: this.listItemEntityTypeName },
+    //     ...ticket,
+    //   });
+    //   await this.spHttpClient.post(
+    //     `${this.getListEndpoint()}/items(${ticket.Id})`,
+    //     SPHttpClient.configurations.v1,
+    //     {
+    //       body,
+    //       headers: {
+    //         "Content-type": "application/json;odata=verbose",
+    //       },
+    //     }
+    //   );
   }
 }
